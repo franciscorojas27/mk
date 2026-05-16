@@ -8,12 +8,14 @@
 mk path/to/file.txt
 ```
 
+Preview what would happen without writing anything:
+
+```bash
+mk -n src/{api,cmd}/main.go
+```
+
 It also supports simple brace expansion:
 
 ```bash
 mk "src/{api,cmd}/main.go"
 ```
-
-## Releases
-
-Tagged pushes like `v1.0.0` trigger GitHub Actions to build Windows and Linux binaries and publish them as a GitHub Release.
