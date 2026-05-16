@@ -47,11 +47,11 @@ func main() {
 	if dryRun {
 		fmt.Println("(Dry-Run Mode: No physical changes were made)")
 	}
-	fmt.Printf("📁 Directories processed: %d\n", summary.Dirs)
-	fmt.Printf("✨ Files created:         %d\n", summary.Created)
-	fmt.Printf("🔄 Files touched:         %d\n", summary.Touched)
+	fmt.Printf("Directories processed: %d\n", summary.Dirs)
+	fmt.Printf("Files created:         %d\n", summary.Created)
+	fmt.Printf("Files touched:         %d\n", summary.Touched)
 	if summary.Failed > 0 {
-		fmt.Printf("❌ Operations failed:     %d\n", summary.Failed)
+		fmt.Printf("Operations failed:     %d\n", summary.Failed)
 	}
 }
 
